@@ -27,8 +27,9 @@ g = Graph(directed=True/False)
 ### Add egdes to graph
 
 ```
-g.add_edge_list( <EdgeList>:List(src, target) )
+g.add_edge_list( edge_list:[(source, target)] )
 ```
+where both `source` and `target` are vertex indexes
 
 ### Add nodes to graph
 
