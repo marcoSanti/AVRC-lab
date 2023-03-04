@@ -86,11 +86,17 @@ sum( weigth for node_a, node_b, weigth in g.get_out_edges ( node ))
 gt.topology.shortest_path ( graph , source_node , target_node )
 ```
 
+### get Clustering coefficient
+
+```python
+graph_tool.clustering.local_clustering( g ) #clustering coefficent of all local node
+
+graph_tool.clustering.global_clustering( g ) #network clustering coefficent
+
+```
+
 ### Draw a graph
 
 ```python
 gt.draw.graph_draw( graph )
 ```
-
-
-
