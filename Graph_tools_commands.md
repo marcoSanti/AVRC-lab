@@ -70,9 +70,10 @@ gt.stats.get_vertex_average( graph, degree="in/out/total")
 #in strength
 sum( weigth for node_a, node_b, weigth in g.get_in_edges ( node ))
 
-#same thing for out strenght buth with method get_out_edges()
+#out strength
+sum( weigth for node_a, node_b, weigth in g.get_out_edges ( node ))
 ```
-For undirected graphs, in strength is equal to out strength
+
 
 
 
