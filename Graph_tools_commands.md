@@ -18,3 +18,21 @@ from utils import *
 my_edge_list = retrieve_edge_list_from_file(<filename>)
 ```
 
+### Generate a graph with graph tool
+
+```
+g = Graph(directed=True/False)
+```
+
+### Add egdes to graph
+
+```
+g.add_edge_list( <EdgeList>:List(src, target) )
+```
+
+### Add nodes to graph
+
+```
+g.add_node_list(<NodeList>:List)
+```
+
