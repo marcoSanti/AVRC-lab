@@ -68,9 +68,7 @@ gt.stats.get_vertex_average( graph, degree="in/out/total")
 
 ```python
 #in strength
-in_strenth = 0
-for edge in g.get_in_edges( node ):
-    in_strenth+=edge[2]
+sum( weigth for node_a, node_b, weigth in g.get_in_edges ( node ))
 
 #same thing for out strenght buth with method get_out_edges()
 ```
