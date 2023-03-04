@@ -8,7 +8,7 @@ conda activate gt
 
 ## Graph tools commands
 
-### Generate a edge list from a csv file
+### Generate a edge list from a text file
 
 ```python
 from utils import *
@@ -22,6 +22,12 @@ my_edge_list = retrieve_edge_list_from_file(filename)
 
 ```python
 from gt.all import *
+```
+
+### Import a edge list from networks.skewed.de
+
+```python
+g = gt.collection.ns["terrorists_911"]
 ```
 
 
@@ -74,6 +80,17 @@ sum( weigth for node_a, node_b, weigth in g.get_in_edges ( node ))
 sum( weigth for node_a, node_b, weigth in g.get_out_edges ( node ))
 ```
 
+### Get shortest path
+
+```python
+gt.topology.shortest_path ( graph , source_node , target_node )
+```
+
+### Draw a graph
+
+```python
+gt.draw.graph_draw( graph )
+```
 
 
 
