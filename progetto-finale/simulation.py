@@ -214,4 +214,6 @@ class Simulation:
                     "Stop condition met at step %i." % self.steps
                     )
                 break
-
+            
+    def getInfected(self):
+        return sum([ 1 for x in self._states if x == "I" ])
